@@ -65,6 +65,11 @@ namespace TrashCollection.Models
     public class RegisterViewModel
     {
         [Required]
+        //[EmailAddress]
+        [Display(Name = "AccountType")]
+        public string AccountType { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }

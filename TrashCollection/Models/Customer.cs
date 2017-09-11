@@ -7,5 +7,6 @@ namespace TrashCollection.Models
 {
     public class Customer
     {
+  
     }
 }

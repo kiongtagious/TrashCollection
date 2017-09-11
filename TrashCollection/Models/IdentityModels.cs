@@ -29,5 +29,6 @@ namespace TrashCollection.Models
         {
             return new ApplicationDbContext();
         }
+
     }
 }

@@ -15,6 +15,14 @@ namespace TrashCollection.Controllers
 
         public ActionResult EmployeeLogin()
         {
+            ViewBag.Message = "Customers On My Route";
+
+            return View();
+
+        }
+        [Authorize(Roles = "EmployeeLogin")]
+        public ActionResult EmployeeProfile()
+        {
             ViewBag.Message = "Your application description page.";
 
             return View();
