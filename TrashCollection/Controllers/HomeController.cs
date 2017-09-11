@@ -30,7 +30,7 @@ namespace TrashCollection.Controllers
 
         public ActionResult CustomerLogin()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Let's get started!";
 
             return View();
         }
