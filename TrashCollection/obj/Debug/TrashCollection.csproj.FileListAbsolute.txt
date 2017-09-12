@@ -162,3 +162,6 @@ C:\Users\kiong\Desktop\TrashCollection\TrashCollection\bin\Microsoft.Owin.Securi
 C:\Users\kiong\Desktop\TrashCollection\TrashCollection\obj\Debug\TrashCollection.csprojResolveAssemblyReference.cache
 C:\Users\kiong\Desktop\TrashCollection\TrashCollection\obj\Debug\TrashCollection.dll
 C:\Users\kiong\Desktop\TrashCollection\TrashCollection\obj\Debug\TrashCollection.pdb
+C:\Users\kiong\Desktop\TrashCollection\TrashCollection\bin\DHTMLX.dll
+C:\Users\kiong\Desktop\TrashCollection\TrashCollection\bin\DHTMLX.xml
+C:\Users\kiong\Desktop\TrashCollection\TrashCollection\bin\DHTMLX.pdb
