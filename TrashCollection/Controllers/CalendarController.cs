@@ -36,8 +36,8 @@ namespace TrashCollection.Controllers
              * The default codebase folder is ~/Scripts/dhtmlxScheduler. It can be overriden:
              *      scheduler.Codebase = Url.Content("~/customCodebaseFolder");
              */
-            
- 
+
+
             scheduler.InitialDate = new DateTime(2012, 09, 03);
 
             scheduler.LoadData = true;
@@ -49,23 +49,23 @@ namespace TrashCollection.Controllers
         public ContentResult Data()
         {
             var data = new SchedulerAjaxData(
-                    new List<CalendarEvent>{ 
+                    new List<CalendarEvent>{
                         new CalendarEvent{
-                            id = 1, 
-                            text = "Sample Event", 
-                            start_date = new DateTime(2012, 09, 03, 6, 00, 00), 
+                            id = 1,
+                            text = "Sample Event",
+                            start_date = new DateTime(2012, 09, 03, 6, 00, 00),
                             end_date = new DateTime(2012, 09, 03, 8, 00, 00)
                         },
                         new CalendarEvent{
-                            id = 2, 
-                            text = "New Event", 
-                            start_date = new DateTime(2012, 09, 05, 9, 00, 00), 
+                            id = 2,
+                            text = "New Event",
+                            start_date = new DateTime(2012, 09, 05, 9, 00, 00),
                             end_date = new DateTime(2012, 09, 05, 12, 00, 00)
                         },
                         new CalendarEvent{
-                            id = 3, 
-                            text = "Multiday Event", 
-                            start_date = new DateTime(2012, 09, 03, 10, 00, 00), 
+                            id = 3,
+                            text = "Multiday Event",
+                            start_date = new DateTime(2012, 09, 03, 10, 00, 00),
                             end_date = new DateTime(2012, 09, 10, 12, 00, 00)
                         }
                     }
@@ -76,12 +76,12 @@ namespace TrashCollection.Controllers
         public ContentResult Save(int? id, FormCollection actionValues)
         {
             var action = new DataAction(actionValues);
-            
+
             try
             {
                 var changedEvent = (CalendarEvent)DHXEventsHelper.Bind(typeof(CalendarEvent), actionValues);
 
-     
+
 
                 switch (action.Type)
                 {

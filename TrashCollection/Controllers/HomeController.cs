@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace TrashCollection.Controllers
 {
     public class HomeController : Controller
@@ -30,7 +31,7 @@ namespace TrashCollection.Controllers
 
         public ActionResult CustomerLogin()
         {
-            ViewBag.Message = "Let's get started!";
+            //ViewBag.Message = "Let's get started!";
 
             return View();
         }
