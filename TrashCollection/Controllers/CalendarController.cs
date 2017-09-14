@@ -70,7 +70,7 @@ namespace TrashCollection.Controllers
                         }
                     }
                 );
-            return (ContentResult)data;
+            return Content(new SchedulerAjaxData(), "text/json");
         }
 
         public ContentResult Save(int? id, FormCollection actionValues)
@@ -101,7 +101,7 @@ namespace TrashCollection.Controllers
             {
                 action.Type = DataActionTypes.Error;
             }
-            return (ContentResult)new AjaxSaveResponse(action);
+            return Content(new AjaxSaveResponse(action), "text/xml");
         }
     }
 }

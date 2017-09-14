@@ -13,7 +13,7 @@ namespace TrashCollection.Controllers
         {
             return View();
         }
-
+        //[Authorize]
         public ActionResult EmployeeLogin()
         {
             ViewBag.Message = "Customers On My Route";
@@ -21,14 +21,13 @@ namespace TrashCollection.Controllers
             return View();
 
         }
-        [Authorize(Roles = "EmployeeLogin")]
         public ActionResult EmployeeProfile()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
+        //[Authorize]
         public ActionResult CustomerLogin()
         {
             //ViewBag.Message = "Let's get started!";
